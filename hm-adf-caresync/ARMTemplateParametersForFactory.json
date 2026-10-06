@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "hm-adf-caresync"
+		},
+		"ls_neon_postgresql_password": {
+			"value": ""
+		},
+		"ls_adls_properties_typeProperties_url": {
+			"value": "https://hmcaresyncproject.dfs.core.windows.net/"
+		},
+		"ls_neon_postgresql_properties_typeProperties_server": {
+			"value": "ep-misty-butterfly-b3gppra6-pooler.c-4.ap-southeast-1.aws.neon.tech"
+		},
+		"ls_neon_postgresql_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"ls_neon_postgresql_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		}
+	}
+}
