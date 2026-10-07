@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Reading the list of tables",
+				"name": "Reading the list of tables - table_id",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
