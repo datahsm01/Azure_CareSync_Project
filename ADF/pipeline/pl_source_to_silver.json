@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Fetch the list of tables",
+				"name": "Reading the list of tables",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -27,7 +27,8 @@
 					"dataset": {
 						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
