@@ -62,7 +62,7 @@
 							"typeProperties": {
 								"variableName": "table_id",
 								"value": {
-									"value": "@string(item().table_id)",
+									"value": "@item().table_id",
 									"type": "Expression"
 								}
 							}
@@ -79,7 +79,7 @@
 		},
 		"variables": {
 			"table_id": {
-				"type": "String"
+				"type": "Integer"
 			}
 		},
 		"annotations": []
