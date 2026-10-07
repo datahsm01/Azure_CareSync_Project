@@ -1,0 +1,41 @@
+{
+	"name": "pl_source_to_silver",
+	"properties": {
+		"activities": [
+			{
+				"name": "Fetch the list of tables",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 2,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"sqlReaderQuery": {
+							"value": "SELECT table_id FROM ctrl.table_config\nWHERE is_active = 1 AND source_system = '@{pipeline().parameters.source_system}';",
+							"type": "Expression"
+						},
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"source_system": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
