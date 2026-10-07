@@ -1,0 +1,23 @@
+{
+	"name": "ls_azuresqldatabase",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "hm-server-caresync-central-india.database.windows.net",
+			"database": "hm-sql-db-caresync-central-india",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "hm-admin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_azure_key_vault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "hm-azure-sql-database-password"
+			}
+		}
+	}
+}
