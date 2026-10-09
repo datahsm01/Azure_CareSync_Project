@@ -166,10 +166,6 @@
 			"table_id": {
 				"type": "Integer",
 				"defaultValue": 1
-			},
-			"adf_run_id": {
-				"type": "String",
-				"defaultValue": "a6"
 			}
 		},
 		"annotations": []
