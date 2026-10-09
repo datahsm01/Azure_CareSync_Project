@@ -141,7 +141,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/hv.ade@outlook.com/CareSync-Project/Azure_CareSync_Project/Azure Databricks/Landing_to_Bronze",
+					"notebookPath": "/Users/hv.ade@outlook.com/CareSync-Project/Azure_CareSync_Project/Azure Databricks/1_Landing_to_Bronze",
 					"baseParameters": {
 						"landing_timestamp": {
 							"value": "@variables('start_time')",
@@ -182,7 +182,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/hv.ade@outlook.com/CareSync-Project/Azure_CareSync_Project/Azure Databricks/Bronze_to_Silver",
+					"notebookPath": "/Users/hv.ade@outlook.com/CareSync-Project/Azure_CareSync_Project/Azure Databricks/2_Bronze_to_Silver",
 					"baseParameters": {
 						"landing_timestamp": {
 							"value": "@variables('start_time')",
