@@ -114,7 +114,7 @@
 						"parameters": {
 							"container": "landing",
 							"folder": {
-								"value": "@concat(\nactivity('Read Table Details').output.firstRow.source_system,\n'/',\nactivity('Read Table Details').output.firstRow.source_table_name,\n'/', \nvariables('current_date')\n)",
+								"value": "@concat(\nactivity('Read Table Details').output.firstRow.source_system,\n'/',\nactivity('Read Table Details').output.firstRow.source_table_name,\n'/', \nvariables('start_time')\n)",
 								"type": "Expression"
 							}
 						}
