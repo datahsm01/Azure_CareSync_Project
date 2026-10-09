@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				"name": "Set variable1",
+				"name": "Set Start Time",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -41,7 +41,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "current_date",
+					"variableName": "start_time",
 					"value": {
 						"value": "@formatDateTime(utcNow(),'yyyy-MM-dd_hh:mm:ss')",
 						"type": "Expression"
@@ -59,7 +59,7 @@
 						]
 					},
 					{
-						"activity": "Set variable1",
+						"activity": "Set Start Time",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -120,6 +120,33 @@
 						}
 					}
 				]
+			},
+			{
+				"name": "1_Landing_to_Bronze",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "CopyTable",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/hv.ade@outlook.com/CareSync-Project/Azure_CareSync_Project/Azure Databricks/Landing_to_Bronze"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_azureDatabricks",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"parameters": {
@@ -129,7 +156,7 @@
 			}
 		},
 		"variables": {
-			"current_date": {
+			"start_time": {
 				"type": "String"
 			}
 		},
