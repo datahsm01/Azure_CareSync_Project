@@ -164,8 +164,7 @@
 		},
 		"variables": {
 			"table_id": {
-				"type": "Integer",
-				"defaultValue": 1
+				"type": "Integer"
 			}
 		},
 		"annotations": []
