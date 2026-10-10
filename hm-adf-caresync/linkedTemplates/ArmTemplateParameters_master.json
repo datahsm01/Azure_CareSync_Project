@@ -5,11 +5,23 @@
 		"factoryName": {
 			"value": "hm-adf-caresync"
 		},
-		"ls_neon_postgresql_password": {
-			"value": ""
-		},
 		"ls_adls_properties_typeProperties_url": {
 			"value": "https://hmcaresyncproject.dfs.core.windows.net/"
+		},
+		"ls_azureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "1009-040456-2gctyt23"
+		},
+		"ls_azure_key_vault_properties_typeProperties_baseUrl": {
+			"value": "https://hm-caresync-keyvault.vault.azure.net/"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_server": {
+			"value": "hm-server-caresync-central-india.database.windows.net"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_database": {
+			"value": "hm-sql-db-caresync-central-india"
+		},
+		"ls_azuresqldatabase_properties_typeProperties_userName": {
+			"value": "hm-admin"
 		},
 		"ls_neon_postgresql_properties_typeProperties_server": {
 			"value": "ep-misty-butterfly-b3gppra6-pooler.c-4.ap-southeast-1.aws.neon.tech"
