@@ -277,7 +277,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "@SELECT watermark_value\nFROM\n    ctrl.watermark\nWHERE\n    table_id = @{pipeline().parameters.table_id};",
+										"value": "SELECT watermark_value\nFROM\n    ctrl.watermark\nWHERE\n    table_id = @{pipeline().parameters.table_id};",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
