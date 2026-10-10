@@ -34,6 +34,8 @@
 			{
 				"name": "Ingest All Tables",
 				"type": "ForEach",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Reading source table list",
@@ -153,10 +155,6 @@
 			}
 		],
 		"parameters": {
-			"source_system": {
-				"type": "string",
-				"defaultValue": "adls_csv"
-			},
 			"adf_run_id": {
 				"type": "string",
 				"defaultValue": "a15"
