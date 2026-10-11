@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "TestCoopyDataActivity",
+				"description": "change",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
